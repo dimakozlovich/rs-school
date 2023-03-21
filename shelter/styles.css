@@ -311,3 +311,128 @@ font-size: 15px;
 line-height: 160%;
 color: #4C4C4C;
 }
+
+
+
+
+
+
+
+
+
+
+.pets
+{
+    position: relative;
+    background-color: #fff;
+    height: 877px;
+    width:1280px;
+}
+.heading-3
+{
+    position: absolute;
+    width: 400px;
+    height: 90px;
+    left: 400px;
+    top: 0px;
+    text-align: center;
+}
+.heading-3 h3
+{
+
+}
+.pets-katrines
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 990px;
+    height: 435px;
+    left: 145px;
+    top:230px;
+
+}
+.katrines
+{
+    width: 270px;
+    height: 435px;
+    text-align: center;
+
+}
+.cat, .dog-1, .dog-2
+{
+    width: 270px;
+    height: 270px;
+}
+.cat
+{
+    background: url(photos/cat.png);
+}
+.dog-1
+{
+    background: url(photos/dog1.png);
+}
+.dog-2
+{
+    background: url(photos/dog2.png);
+}
+.katrines p
+{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    display: inline-block;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    box-sizing: content-box;
+}
+.pets button
+{
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 15px 45px;
+gap: 10px;
+
+position: absolute;
+width: 261px;
+height: 52px;
+left: 510px;
+right: 509px;
+top: 645px;
+
+/* color-primary */
+
+background: #F1CDB3;
+border-radius: 100px;
+}
+.pets button p
+{
+    width: 173px;
+height: 22px;
+
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+/* identical to box height, or 22px */
+
+letter-spacing: 0.06em;
+
+/* color-dark-3xl */
+
+color: #292929;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: center;
+flex-grow: 0;
+}
