@@ -243,3 +243,71 @@ border-radius: 100px;
     flex-grow: 0;
 
 }
+
+/*about-pets*/
+.about-pets
+{
+   background-color: #fff;
+   height: 588px;
+   position: relative;
+}
+.dog-photo
+{
+    position: absolute;
+    width: 300px;
+    height: 408px;
+    left: 215px;
+    top: 80px;
+   
+    background:url(photos/dogPhoto.png);
+}
+
+.about-shelter
+{
+    height: 350px;
+    position: absolute;
+    left:635px;
+    top:94px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+}
+
+.heading-2
+{
+  
+width: 370px;
+height: 90px;
+left: 0px;
+top: 0px;
+}
+
+
+.heading-2 h3, .heading-3 h3 ,.heading-4 h3
+{
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+
+color: #545454;
+}
+.paragraph-1 , .paragraph-2
+{
+    width: 430px;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+color: #4C4C4C;
+}
