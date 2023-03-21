@@ -436,3 +436,133 @@ order: 0;
 align-self: center;
 flex-grow: 0;
 }
+
+
+/* list help */
+
+.list-help
+{
+    
+    position: relative;
+    background-color: #fff;
+    height: 611px;
+    width:1280px;
+
+}
+.heading-4
+{
+    position: absolute;
+width: 310px;
+height: 90px;
+left: 446px;
+top: 0px;
+}
+.heading-4 h3
+{
+    text-align: center;
+}
+.list
+{
+    width: 1026px;
+    height: 281px;
+    position: absolute;
+    left: 127px;
+    top:230px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.point
+{
+    height: 113px;
+    width: 166.46px;
+    flex-shrink: 0;
+    margin: 1em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+}
+
+/*ICONS*/
+
+.point > p
+{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    display: inline-block;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    box-sizing: content-box;
+color: #545454;
+}
+.pet-food
+{
+    background: url(icons/petFood.png);
+    width: 47.86px;
+    height: 60px;
+    margin: 0 auto;
+}
+.transportation
+{
+    background: url(icons/transportation.png);
+    margin: 0 auto;
+    width: 59.95px;
+height: 60px;
+}
+.toys
+{
+    background: url(icons/toys.png);
+    margin: 0 auto;
+    width: 60px;
+height: 60px;
+}
+
+.bowls-and-cups
+{
+    background: url(icons/bowls-and-cups.png);
+    margin: 0 auto;
+    width: 60px;
+height: 56.82px;
+}
+.shampoos
+{
+    background: url(icons/shampoos.png);
+    margin: 0 auto;
+    width: 31.3px;
+height: 60px;
+}
+.vitamins
+{
+    background: url(icons/vitamins.png);
+    margin: 0 auto;
+    width: 60px;
+height: 54.16px;
+}
+.medicines
+{
+    background: url(icons/medicines.png);
+    margin: 0 auto;
+    width: 60px;
+height: 60px;
+}
+.collars-leashes
+{
+    background: url(icons/collars-or-leashes.png);
+    margin: 0 auto;
+    width: 60px;
+height: 52.43px;
+}
+.sleeping-areas
+{
+    background: url(icons/sleeping-area.png);
+    margin: 0 auto;
+    width: 56.29px;
+height: 60px;
+}
