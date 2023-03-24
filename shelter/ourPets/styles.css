@@ -1,0 +1,355 @@
+body
+{
+   background-color: #ccc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+}
+.centrain
+{
+    position: relative;
+    width: 1280px;
+    height: 3796px;
+    margin:0 auto;
+    position: relative;
+    background-color: #f6f6f6;
+}
+
+/*HEADER*/
+
+
+header{
+    width: 100%;
+    height: 120px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.head
+{
+    display: flex;
+    position: absolute;
+    width: 1200px;
+    height: 60px;
+    left:40px;
+    top:30px;
+    background-color: #ffffff;
+}
+.title
+{
+    position: absolute;
+    max-width: 187px;               
+    width:100%;
+    height: 35px;
+    left: 0px;
+    top: calc(50% - 35px/2 - 12.5px);
+}
+.title > label
+{
+    /* logo_title */
+
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 110%;
+/* or 35px */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+
+/* color-primary */
+
+color: #292929
+}
+.subtitle
+{
+position: absolute;
+width: 188px;
+height: 15px;
+left: 4px;
+top: calc(50% - 15px/2 + 22.5px);
+
+}
+.subtitle p
+{
+    /* logo_subtitle */
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.1em;
+
+/* color-light-xl */
+
+ color: #292929;
+
+}
+.head ul
+{
+  display: flex;
+  flex-direction: row;
+  list-style-type:none;
+  margin-left: auto;
+  margin-top: 16px;
+}
+
+.head ul li a
+{
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+/* identical to box height, or 24px */
+
+
+/* color-dark-s */
+
+color: #292929;
+margin-left: 35px;
+}
+
+main{
+    position: relative;
+}
+main h1{
+    position: absolute;
+width: 400px;
+height: 90px;
+left: calc(50% - 400px/2);
+top: 80px;
+
+/* h3 */
+
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+
+color: #545454;
+}
+.cards-container
+{
+    position: absolute;
+width: 1200px;
+height: 930px;
+left: 40px;
+top: 215px;
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  grid-template-rows: 435px 435px;
+  grid-column-gap:40px;
+  grid-row-gap:30px;
+
+
+}
+
+.card{
+
+  width: 270px;
+  height: 435px;
+  top: 15px;
+/* color-light-s */
+
+  background: #FAFAFA;
+  border-radius: 9px;
+
+}
+.learn-more
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: relative;
+    width: 187px;
+    height: 52px;
+    left: 41.5px;
+    top: 70px;
+    border-radius: 24px;
+    padding: 15px 45px;
+    flex-direction: column;
+    align-items: center;
+
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-color: #f6f6f6;
+}
+.learn-more p
+{
+    position: relative;
+    width: 99px;
+height: 22px;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+/* identical to box height, or 22px */
+
+letter-spacing: 0.06em;
+
+/* color-dark-3xl */
+
+color: #292929;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.name-pet
+{
+    
+    position: relative;
+width: 74px;
+height: 23px;
+left: 98px;
+top: 30px;
+
+/* pets-card-title */
+
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+
+color: #545454;
+
+}
+.picture
+{
+    position: relative;
+    width: 270px;
+    height: 270px;
+}
+.pet-katrine{
+  background: url(piqtures/pets-katrine.png);
+}
+.pet-jennifer{
+    background: url(piqtures/pets-jennifer.png);
+  }
+.pet-woody{
+    background: url(piqtures/pets-woody.png);
+  }
+.pet-sophia{
+    background: url(piqtures/pets-sophia.png);
+  }
+.pet-timmy{
+    background: url(piqtures/pets-timmy.png);
+  }
+.pet-charly{
+    background: url(piqtures/pets-charly.png);
+  }
+.pet-scarlett{
+    background: url(piqtures/pets-scarlet.png);
+  }
+.pet-freddie{
+    background: url(piqtures/pets-freddie.png);
+  }
+.navigation
+{
+    position: absolute;
+    width: 340px;
+    height: 52px;
+    left: 430px;
+    top: 1190px;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation button , .navigation div
+{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #f6f6f6;
+}
+.navigation button p 
+{
+position: relative;
+
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+
+
+letter-spacing: 0.06em;
+
+/* color-dark-s */
+
+color: #CDCDCD;
+}
+.navigation div {
+
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* color-primary */
+
+background: #F1CDB3;
+border-radius: 100px;
+}
+.navigation div p
+{
+
+position: relative;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+/* identical to box height, or 23px */
+
+display: inline;
+text-align: center;
+margin: 0 auto;
+letter-spacing: 0.06em;
+
+/* color-dark-3xl */
+color: #292929;
+left: 21px;
+top:14px;
+}
