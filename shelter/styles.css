@@ -69,7 +69,6 @@ color: #F1CDB3;
 .subtitle
 {
     position: absolute;
-width: 183px;
 height: 15px;
 left: 4px;
 top: calc(50% - 15px/2 + 22.5px);
@@ -354,8 +353,16 @@ color: #4C4C4C;
     width: 270px;
     height: 435px;
     text-align: center;
+    position: relative;
 
 }
+
+
+
+
+
+
+
 .cat, .dog-1, .dog-2
 {
     width: 270px;
@@ -386,7 +393,66 @@ color: #4C4C4C;
     color: #545454;
     box-sizing: content-box;
 }
-.pets button
+
+
+
+.learn-more
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: relative;
+    width: 187px;
+    height: 52px;
+    left: 41.5px;
+    top: 70px;
+    border-radius: 24px;
+    padding: 15px 45px;
+    flex-direction: column;
+    align-items: center;
+
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-color: #f6f6f6;
+}
+.learn-more p
+{
+    position: relative;
+    width: 99px;
+height: 22px;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+/* identical to box height, or 22px */
+
+letter-spacing: 0.06em;
+
+/* color-dark-3xl */
+
+color: #292929;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+
+
+
+
+.pets-button
 {
     display: flex;
 flex-direction: column;
@@ -399,14 +465,14 @@ width: 261px;
 height: 52px;
 left: 510px;
 right: 509px;
-top: 645px;
+top: 740px;
 
 /* color-primary */
 
 background: #F1CDB3;
 border-radius: 100px;
 }
-.pets button p
+.pets-button p
 {
     width: 173px;
 height: 22px;
@@ -450,12 +516,13 @@ flex-grow: 0;
     position: absolute;
 width: 310px;
 height: 90px;
-left: 446px;
+left: 486px;
 top: 0px;
 }
 .heading-4 h3
 {
     text-align: center;
+    
 }
 .list
 {
