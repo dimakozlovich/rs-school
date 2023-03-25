@@ -125,6 +125,8 @@ margin-left: 35px;
 
 main{
     position: relative;
+    width: 1280px;
+    height: 1342px;
 }
 main h1{
     position: absolute;
@@ -352,4 +354,159 @@ letter-spacing: 0.06em;
 color: #292929;
 left: 21px;
 top:14px;
+}
+footer{
+   
+  position: relative;
+height: 350px;
+left: 0%;
+right: 0%;
+top: 0px;
+
+/* footer-gradient-background */
+
+background: url(../noise_lines_transparent@2X.png),
+radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+footer h3{
+    
+  top: 0px;
+  width: 280px;
+  height: 90px;
+
+/* h3 */
+
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+
+letter-spacing: 0.06em;
+
+/* color-light-xl */
+
+color: #FFFFFF;
+
+}
+.our-contacts
+{
+  position: absolute;
+  width: 278px;
+  height: 234px;
+  left: 40px;
+  top: 56px;
+}
+.posticon
+{
+  background: url(../icons/icon-email.svg);
+  width: 48px;
+  height: 29px;
+}
+.email, .phone
+{
+  width: 100%;
+ display: flex;
+ flex-wrap: nowrap;
+ flex-direction: row;
+ margin-top: 34px;
+}
+.email p , .phone p
+{
+      /* London */
+
+margin-left: 20px;
+width: 260px;
+height: 23px;
+top: 207px;
+
+/* h4 */
+
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+/* identical to box height, or 23px */
+
+letter-spacing: 0.06em;
+
+/* color-primary */
+
+color: #F1CDB3;
+}
+.phoneicon
+{
+  background: url(../icons/icon-phone.svg);
+  width: 46px;
+  height: 32px;
+  left: 0px;
+  top: 0px;
+}
+
+
+.locations
+{
+  position: absolute;
+  width: 302px;
+  height: 234px;
+  left: 438px;
+  top: 56px;
+}
+.mark{
+width: 100%;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+margin-top: 34px;
+}
+.mark + mark
+{
+  margin-top: 34px;
+}
+.mark p{
+  margin-left: 20px;
+}
+.mark p
+{
+  /* London */
+
+
+width: 260px;
+height: 23px;
+top: 207px;
+
+/* h4 */
+
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+/* identical to box height, or 23px */
+
+letter-spacing: 0.06em;
+
+/* color-primary */
+
+color: #F1CDB3;
+}
+.pointicon
+{
+  background: url(../icons/icon-marker.svg);
+  width: 22px;
+  height: 32px;
+}
+
+
+
+.footer-puppy
+{
+  width: 300px;
+  height: 310px;
+  background: url(../photos/footer-puppy.png);
+  position: absolute;
+  right: 40px;
+  bottom: 0px;
 }
