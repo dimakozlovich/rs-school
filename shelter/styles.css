@@ -1,6 +1,7 @@
 body
 {
     background-color: #ccc;
+    
 }
 *{
     margin: 0;
@@ -8,6 +9,7 @@ body
     box-sizing: border-box;
     text-decoration: none;
     display: block;
+    scroll-behavior: smooth;
 }
 .centrain
 {
@@ -16,7 +18,10 @@ body
     margin:0 auto;
     position: relative;
 }
-
+button,a 
+{
+    cursor: pointer
+}
 /*HEADER*/
 
 
@@ -47,7 +52,7 @@ header{
     left: 0px;
     top: calc(50% - 35px/2 - 12.5px);
 }
-.title > label
+.title > h1
 {
     /* logo_title */
 
@@ -117,6 +122,15 @@ line-height: 160%;
 
 color: #CDCDCD;
 margin-left: 35px;
+}
+.head ul li:nth-child(n + 2) :hover 
+{
+    color: #888887;
+}
+
+#backlight
+{
+    border-bottom: 2px solid #F1CDB3;
 }
 .start-screen-content{
     position: absolute;
@@ -191,12 +205,6 @@ color: #CDCDCD;
 }
 .start-screen-content button
 {
-
-/* button_primary */
-
-
-/* Auto layout */
-
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -215,8 +223,11 @@ background: #F1CDB3;
 border-radius: 100px;
 /* color-primary */
 
-background: #F1CDB3;
-border-radius: 100px;
+}
+
+.start-screen-content button:hover
+{
+    background: #CCC;
 }
 .start-screen-content button p{
     width: 130px;
@@ -336,32 +347,88 @@ color: #4C4C4C;
     top: 80px;
     text-align: center;
 }
+
+.button_arrow-1,.button_arrow-2
+{
+    display: flex;
+flex-direction: column;
+align-items: center;
+
+position: absolute;
+width: 52px;
+height: 52px;
+top: 442px;
+
+/* color-primary */
+
+border: 2px solid #F1CDB3;
+border-radius: 100px;
+}
+.button_arrow-1
+{
+    left: 40px;
+    display: none;
+}
+.button_arrow-2
+{
+    right: 40px;
+}
+.button_arrow-1 p, .button_arrow-2 p
+{
+    margin-top: 17px;
+}
 .pets-katrines
 {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 990px;
+    flex-wrap: wrap;
+    width: 1080px;
     height: 435px;
-    left: 145px;
+    left: 100px;
     top:230px;
-
 }
 .katrines
 {
     width: 270px;
     height: 435px;
+    margin-left: 45px;
+    margin-right: 45px;
     text-align: center;
     position: relative;
+    background: #FAFAFA
 
 }
-
-
-
-
-
-
+.katrines:hover
+{
+    width: 290px;
+    height: 455px;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.katrines:hover .cat
+{
+    margin: 10px;
+}
+.katrines:hover .dog-1
+{
+   margin: 10px;
+}
+.katrines:hover .dog-2
+{
+   margin: 10px;
+}
+.katrines:hover .learn-more
+{
+    left: 51.5px;
+    top: 50px;
+}
+.learn-more:hover
+{
+    background-color: #ccc;
+}
 
 .cat, .dog-1, .dog-2
 {
@@ -471,6 +538,10 @@ top: 740px;
 
 background: #F1CDB3;
 border-radius: 100px;
+}
+.pets-button:hover
+{
+    background: #ccc;
 }
 .pets-button p
 {
@@ -827,7 +898,7 @@ color: #FFFFFF;
 }
 .posticon
 {
-    background: url(icons/icon-email.svg);
+    background: url(icons/mail.svg);
     width: 48px;
     height: 29px;
 }
@@ -865,7 +936,7 @@ color: #F1CDB3;
 }
 .phoneicon
 {
-    background: url(icons/icon-phone.svg);
+    background: url(icons/phone.svg);
     width: 46px;
     height: 32px;
     left: 0px;
@@ -921,7 +992,7 @@ color: #F1CDB3;
 }
 .pointicon
 {
-    background: url(icons/icon-marker.svg);
+    background: url(icons/pin.svg);
     width: 22px;
     height: 32px;
 }

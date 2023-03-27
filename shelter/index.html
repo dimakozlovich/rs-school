@@ -3,6 +3,10 @@
     <head>
         <title>Main</title>
         <link rel="stylesheet" href="styles.css"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
     </head>
     <body>
       <div class="centrain">
@@ -13,11 +17,11 @@
             <div class="head">
                 
                <a href="/">
-                <div class="title"><label>Cozy House</label></div>
+                <div class="title"><h1>Cozy House</h1></div>
                 </a>
                 <div class="subtitle"><p>Shelter for pets in Boston</p></div>
                     <ul>
-                        <li><a href="">About the shelter</a></li>
+                        <li><a href="" id="backlight">About the shelter</a></li>
                         <li><a href="ourPets/ourpets.html">Our pets</a></li>
                         <li><a href="#help">Help the shelter</a></li>
                         <li><a href="#contacts" class="contacts">Contacts</a></li>
@@ -30,11 +34,11 @@
                 We offer to give a chance to a little and nice puppy with an extremely wide and open heart. 
                 He or she will love you more than anybody else in the world, you will see!
             </p></div>
-            <button onclick="window.location.href='#our-friends'"> <p> Make a friend</p></button>
+            <button click="window.location.href='#our-friends'"> <p> Make a friend</p></button>
            </div>
         </header>
 
-        <!-- ABOUT-PETS -->
+        <!-- Not only -->
         <div class="about-pets">
             <div class="dog-photo"></div>
             <div class="about-shelter">
@@ -53,11 +57,12 @@
             </div>
           </div>
 
-           <!-- PETS -->
+           <!-- Our Friends -->
         <div class="pets" id="our-friends">
             <div class="heading-3"><h3>Our friends  who  <br> are looking for a house</h3>
             </div>
-        
+        <button class="button_arrow-1"><p>&larr;</p></button>
+        <button class="button_arrow-2"><p>&rarr;</p></button>
           <div class="pets-katrines">
               <!-- CAT --> 
               <div class="katrines">
@@ -83,7 +88,7 @@
             </form>
         </div>
 
-           <!-- list-help   -->
+           <!-- Help   -->
         <div class="list-help" id="help">
             <div class="heading-4">
                <h3>How you can help our shelter</h3>
@@ -100,7 +105,7 @@
                <div class="point"><div class="sleeping-areas"></div><p>Sleeping areas</p></div>
             </div>
        </div>
-        <!-- donation-information -->
+        <!-- In addition -->
        
         <div class="donation">
           
@@ -144,5 +149,6 @@
       </footer>
 
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
