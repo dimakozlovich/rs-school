@@ -325,12 +325,6 @@ color: #4C4C4C;
 
 
 
-
-
-
-
-
-
 .pets
 {
     position: relative;
@@ -367,7 +361,7 @@ border-radius: 100px;
 .button_arrow-1
 {
     left: 40px;
-    display: none;
+    background-color:#ccc ;
 }
 .button_arrow-2
 {
@@ -376,6 +370,10 @@ border-radius: 100px;
 .button_arrow-1 p, .button_arrow-2 p
 {
     margin-top: 17px;
+}
+.button_arrow-1 , .button_arrow-2:hover
+{
+   background-color: #ccc;
 }
 .pets-katrines
 {
@@ -513,12 +511,6 @@ order: 0;
 flex-grow: 0;
 
 }
-
-
-
-
-
-
 .pets-button
 {
     display: flex;
@@ -900,7 +892,7 @@ color: #FFFFFF;
 {
     background: url(icons/mail.svg);
     width: 48px;
-    height: 29px;
+    height: 26.5px;
 }
 .email, .phone
 {

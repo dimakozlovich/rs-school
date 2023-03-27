@@ -18,6 +18,10 @@ body
     position: relative;
     background-color: #f6f6f6;
 }
+button,a 
+{
+    cursor: pointer
+}
 
 /*HEADER*/
 
@@ -50,7 +54,7 @@ header{
     left: 0px;
     top: calc(50% - 35px/2 - 12.5px);
 }
-.title > label
+.title > h1
 {
     /* logo_title */
 
@@ -122,7 +126,19 @@ line-height: 160%;
 color: #292929;
 margin-left: 35px;
 }
+.head ul li:nth-child(1) :hover 
+{
+    color: #888887;
+}
+.head ul li:nth-child(n+3) :hover 
+{
+    color: #888887;
+}
 
+#backlight
+{
+    border-bottom: 2px solid #F1CDB3;
+}
 main{
     position: relative;
     width: 1280px;
@@ -180,6 +196,20 @@ top: 215px;
   border-radius: 9px;
 
 }
+.card:hover
+{
+
+  width: 280px;
+  height: 445px;
+  border-radius: 20px;
+}
+.card:hover .picture
+{
+    width: 270px;
+    height: 270px;
+    margin-left: 5px;
+}
+
 .learn-more
 {
     display: flex;
@@ -203,6 +233,10 @@ top: 215px;
     order: 0;
     flex-grow: 0;
     background-color: #f6f6f6;
+}
+.learn-more:hover
+{
+  background-color: #ccc;
 }
 .learn-more p
 {
@@ -305,32 +339,38 @@ color: #545454;
     border-radius: 50%;
     background-color: #f6f6f6;
 }
+
+.navigation button:nth-child(-n + 2)
+{
+  border: 2px solid #CDCDCD;
+  color:#CDCDCD;
+}
+.navigation button:nth-child(n + 3)
+{
+  border: 2px solid #F1CDB3;
+  color: #292929;
+}
+.navigation button:nth-child(n + 3):hover
+{
+  background-color:#ccc;
+}
+
+
+
+
 .navigation button p 
 {
 position: relative;
-
 font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 115%;
-
-
 letter-spacing: 0.06em;
-
-/* color-dark-s */
-
-color: #CDCDCD;
+color: inherit;
+display: inline-block;
 }
 .navigation div {
-
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-/* color-primary */
-
 background: #F1CDB3;
 border-radius: 100px;
 }
@@ -347,7 +387,6 @@ line-height: 115%;
 
 display: inline;
 text-align: center;
-margin: 0 auto;
 letter-spacing: 0.06em;
 
 /* color-dark-3xl */
@@ -400,9 +439,9 @@ color: #FFFFFF;
 }
 .posticon
 {
-  background: url(../icons/icon-email.svg);
+  background: url(../icons/mail.svg);
   width: 48px;
-  height: 29px;
+  height: 26.5px;
 }
 .email, .phone
 {
@@ -438,7 +477,7 @@ color: #F1CDB3;
 }
 .phoneicon
 {
-  background: url(../icons/icon-phone.svg);
+  background: url(../icons/phone.svg);
   width: 46px;
   height: 32px;
   left: 0px;
@@ -494,7 +533,7 @@ color: #F1CDB3;
 }
 .pointicon
 {
-  background: url(../icons/icon-marker.svg);
+  background: url(../icons/pin.svg);
   width: 22px;
   height: 32px;
 }
