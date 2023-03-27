@@ -11,13 +11,16 @@
        <!-- HEADER -->
         <header>
             <div class="head">
+                
+               <a href="/">
                 <div class="title"><label>Cozy House</label></div>
+                </a>
                 <div class="subtitle"><p>Shelter for pets in Boston</p></div>
                     <ul>
-                        <li><a href="ourPets/ourpets.html">About the shelter</a></li>
-                        <li><a href="#">Our pets</a></li>
-                        <li><a href="#">Help the shelter</a></li>
-                        <li><a href="#" class="contacts">Contacts</a></li>
+                        <li><a href="">About the shelter</a></li>
+                        <li><a href="ourPets/ourpets.html">Our pets</a></li>
+                        <li><a href="#help">Help the shelter</a></li>
+                        <li><a href="#contacts" class="contacts">Contacts</a></li>
                     </ul>
             </div>
            <div class="start-screen-content">
@@ -27,7 +30,7 @@
                 We offer to give a chance to a little and nice puppy with an extremely wide and open heart. 
                 He or she will love you more than anybody else in the world, you will see!
             </p></div>
-            <button> <p> Make a friend</p></button>
+            <button onclick="window.location.href='#our-friends'"> <p> Make a friend</p></button>
            </div>
         </header>
 
@@ -51,7 +54,7 @@
           </div>
 
            <!-- PETS -->
-        <div class="pets">
+        <div class="pets" id="our-friends">
             <div class="heading-3"><h3>Our friends  who  <br> are looking for a house</h3>
             </div>
         
@@ -75,11 +78,13 @@
                   <button class="learn-more"><p>Learn more</p></button>
                 </div>
             </div>
+            <form action="ourPets/ourpets.html">
             <button class="pets-button"><p>Get to know the rest</p></button>
+            </form>
         </div>
 
            <!-- list-help   -->
-        <div class="list-help">
+        <div class="list-help" id="help">
             <div class="heading-4">
                <h3>How you can help our shelter</h3>
             </div>
@@ -105,7 +110,7 @@
              <div class="heading-5"><h3>You can also<br>make a donation</h3></div>
             <h5>Name of the bank / Type of bank account</h5>
         
-                 <div class="card-info"><div class="card-icon"></div><p>8380 2880 8028 8791 7435</p></div>
+                 <div class="card-info"><div class="card-icon"></div><a href="/"><p>8380 2880 8028 8791 7435</p></a></div>
                  <div class="legal-info">
                     Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. 
@@ -116,7 +121,7 @@
      
         </div>
         <!-- footer -->
-      <footer>
+      <footer id="contacts">
          <div class="our-contacts">
             <h3>For questions <br> and suggestions</h3>
             <div class="email"><div class="posticon"></div><p>email@shelter.com</p></div>
